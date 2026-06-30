@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    
+    #url-display {
+      margin-bottom: 10px;
+      word-wrap: break-word;
+      font-size: 12px;
+    }
+    
+    #redirect-btn {
+      width: 100%;
+      padding: 8px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    #redirect-btn:hover {
+      background-color: #3367d6;
+    }
+    
+    #redirect-btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    .glow {
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 5px #4285f4;
+      }
+      to {
+        box-shadow: 0 0 20px #4285f4, 0 0 30px #4285f4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="url-display">Current URL:</div>
+  <button id="redirect-btn" disabled>Redirect</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

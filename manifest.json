@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "URL Redirector",
+  "version": "1.0",
+  "description": "Extracts URL parameters and redirects to transformed URLs based on user-defined rules",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "URL Redirector",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "options_page": "settings/settings.html"
+}
